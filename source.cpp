@@ -1,3 +1,5 @@
+// Copyright © Bùi Nguyễn Tấn Sang (EndermanPC) 2024
+
 #include <iostream>
 #include <vector>
 #include <unordered_map>
