@@ -8,22 +8,22 @@ function heavySort(arr) {
     const minValue = Math.min(...arr);
     const maxValue = Math.max(...arr);
     
-    // Step 1: Create an object to act as the bucket
-    const buckets = {};
+    // Step 1: Create a Map to act as the bucket
+    const buckets = new Map();
     
     // Step 2: Push numbers into the bucket
     for (const num of arr) {
-        if (!(num in buckets)) {
-            buckets[num] = 0;
+        if (!buckets.has(num)) {
+            buckets.set(num, 0);
         }
-        buckets[num] += 1;
+        buckets.set(num, buckets.get(num) + 1);
     }
     
     // Step 3: Create the sorted array
     const sortedArr = [];
     for (let num = minValue; num <= maxValue; num++) {
-        if (num in buckets) {
-            sortedArr.push(...Array(buckets[num]).fill(num));
+        if (buckets.has(num)) {
+            sortedArr.push(...Array(buckets.get(num)).fill(num));
         }
     }
     
