@@ -19,6 +19,8 @@ The Heavy Sort algorithm simulates the process of pushing numbers into a water b
 ## Python Code
 
 ```python
+# Copyright © Bùi Nguyễn Tấn Sang (EndermanPC) 2024
+
 def heavy_sort(arr):
     if not arr:
         return arr
@@ -36,8 +38,11 @@ def heavy_sort(arr):
         buckets[num] += 1
     
     # Step 3: Create the sorted array
+    start_range = (min_value // 10) * 10
+    end_range = ((max_value // 10) + 1) * 10
+    
     sorted_arr = []
-    for num in range(min_value, max_value + 1):
+    for num in range(start_range, end_range):
         if num in buckets:
             sorted_arr.extend([num] * buckets[num])
     
