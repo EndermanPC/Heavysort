@@ -1,3 +1,5 @@
+// Copyright © Bùi Nguyễn Tấn Sang (EndermanPC) 2024
+
 function heavySort(arr) {
     if (arr.length === 0) {
         return arr;
