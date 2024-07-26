@@ -116,6 +116,11 @@ int main() {
 - **Array of size 10^6, randomly generated numbers from 1 to 100**: runs in `0.113055s`.
 - **Array of size 10^5, randomly generated numbers from 0 to 100**: runs in `0.016916s`.
 
+## Some notes about the algorithm
+- The algorithm works well if your data is `dense` (meaning the gap between the two nearest values ​​is not too large, for example: `75, 81, 90`). This is the ideal condition to use it.
++ If your data is too `sparse` (for example: `1, 2, 1000`) it will perform worse than other algorithms. 
+- The algorithm is faster than Bubble Sort, Selection Sort, and Insertion Sort only if there aren't huge gaps between the numbers (as mentioned above) but it will be slower than Quick Sort and Merge Sort.
+
 ## Conclusion
 The Heavy Sort algorithm is an innovative and intuitive approach based on the idea of weight and the sinking/floating of numbers. While it may not be space-efficient when the largest value is too large, using a dictionary optimizes memory usage and keeps the time complexity acceptable. This makes the algorithm a unique and effective solution in many practical scenarios.
 
