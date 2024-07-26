@@ -49,6 +49,8 @@ print("Sorted Array:", sorted_arr)
 
 ## C++ Code
 ```cpp
+# Copyright © Bùi Nguyễn Tấn Sang (EndermanPC) 2024
+
 #include <iostream>
 #include <vector>
 #include <unordered_map>
