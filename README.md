@@ -73,7 +73,7 @@ print("Sorted array:", sorted_arr)
 The Heavy Sort algorithm is an innovative and intuitive approach based on the idea of weight and the sinking/floating of numbers. While it may not be space-efficient when the largest value is too large, using a dictionary optimizes memory usage and keeps the time complexity acceptable. This makes the algorithm a unique and effective solution in many practical scenarios.
 
 ## Contact
-For any questions or contributions, please reach out to me at [endermanpc@gmail.com].
+For any questions or contributions, please reach out to me at [endermatday@gmail.com].
 
 ## License
 This project is licensed under the Apache 2.0 License.
